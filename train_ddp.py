@@ -292,7 +292,7 @@ def train(rank, world_size):
                     loss_real_sum += loss_real.detach().item()
                     loss_fake_sum += loss_fake.detach().item()
                 optim_D.step()
-
+                torch.cuda.empty_cache() #有效防止內存分配不夠用的問題  
             loss = loss_sum / FLAGS.n_dis
             loss_real = loss_real_sum / FLAGS.n_dis / FLAGS.accumulation
             loss_fake = loss_fake_sum / FLAGS.n_dis / FLAGS.accumulation
