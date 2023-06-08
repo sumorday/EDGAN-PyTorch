@@ -1,10 +1,6 @@
-# Gradient Normalization for Generative Adversarial Networks
+# XIA TIAN Gradient Normalization for Generative Adversarial Networks
 
-Yi-Lun Wu, Hong-Han Shuai, Zhi-Rui Tam, Hong-Yu Chiu
-
-Paper: [https://arxiv.org/abs/2109.02235](https://arxiv.org/abs/2109.02235)
-
-This is the official implementation of Gradient Normalized GAN (GN-GAN).
+XIA TIAN
 
 ## Requirements
 - Python 3.8.9
