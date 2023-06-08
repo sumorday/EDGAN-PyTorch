@@ -1,4 +1,4 @@
-# XIA TIAN Gradient Normalization for Generative Adversarial Networks
+# XIA TIAN P Gradient Normalization for Generative Adversarial Networks
 
 Wait soon
 
