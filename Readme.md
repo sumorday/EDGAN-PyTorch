@@ -1,6 +1,6 @@
 # XIA TIAN P Gradient Normalization for Generative Adversarial Networks
 
-Wait soon
+We will update soon
 
 ## Requirements
 - Python 3.8.9
