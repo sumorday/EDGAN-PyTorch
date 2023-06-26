@@ -145,11 +145,5 @@ loss.backward()                                 # backward propagation
 ## Citation
 If you find our work is relevant to your research, please cite:
 ```
-@InProceedings{GNGAN_2021_ICCV,
-    author = {Yi-Lun Wu, Hong-Han Shuai, Zhi Rui Tam, Hong-Yu Chiu},
-    title = {Gradient Normalization for Generative Adversarial Networks},
-    booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
-    month = {Oct},
-    year = {2021}
-}
+
 ```
