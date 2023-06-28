@@ -126,8 +126,8 @@ loss_fn = BCEWithLogitsLoss()
 # Update discriminator
 x_real = ...                                    # real data
 x_fake = net_G(torch.randn(64, 3, 32, 32))      # fake data
-pred_real = normalize_gradient(net_D, x_real)   # net_D(x_real)
-pred_fake = normalize_gradient(net_D, x_fake)   # net_D(x_fake)
+pred_real = penalty_normalize_gradient(net_D, x_real)   # net_D(x_real)
+pred_fake = penalty_normalize_gradient(net_D, x_fake)   # net_D(x_fake)
 loss_real = loss_fn(pred_real, torch.ones_like(pred_real))
 loss_fake = loss_fn(pred_fake, torch.zeros_like(pred_fake))
 (loss_real + loss_fake).backward()              # backward propagation
