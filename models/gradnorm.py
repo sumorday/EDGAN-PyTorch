@@ -5,7 +5,7 @@ def penalty_normalize_gradient(net_D, x, **kwargs):
     """
                           1 - f
     f_hat = -------------------------------
-             ||1 - grad_f ||+ |1 - f|
+               ||1 - grad_f ||+ |1 - f|
     """
     x.requires_grad_(True)
     f = net_D(x, **kwargs)
