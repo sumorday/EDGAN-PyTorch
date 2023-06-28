@@ -117,7 +117,7 @@ All the reported values (Inception Score and FID) in our paper are calculated by
 The function `normalize_gradient` is implemented based on `torch.autograd` module, which can easily normalize your forward propagation of discriminator by updating a single line.
 ```python
 from torch.nn import BCEWithLogitsLoss
-from models.gradnorm import normalize_gradient
+from models.gradnorm import penalty_normalize_gradient
 
 net_D = ...     # discriminator
 net_G = ...     # generator
