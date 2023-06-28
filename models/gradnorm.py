@@ -1,7 +1,7 @@
 import torch
 
 
-def normalize_gradient(net_D, x, **kwargs):
+def penalty_normalize_gradient(net_D, x, **kwargs):
     """
                           1 - f
     f_hat = -------------------------------
