@@ -280,7 +280,7 @@ def train(rank, world_size):
                     with torch.no_grad():
                         fake = net_G(z).detach()
                     real_fake = torch.cat([real, fake], dim=0)
-                    pred = normalize_gradient(net_D, real_fake)
+                    pred = penalty_normalize_gradient(net_D, real_fake)
                     pred_real, pred_fake = torch.split(
                         pred, [real.shape[0], fake.shape[0]])
 
@@ -313,7 +313,7 @@ def train(rank, world_size):
                     z = torch.randn(
                         local_batch_size_G, FLAGS.z_dim, device=device)
                     fake = net_G(z)
-                    pred_fake = normalize_gradient(net_D, fake)
+                    pred_fake = penalty_normalize_gradient(net_D, fake)
                     loss = loss_fn(pred_fake) / FLAGS.accumulation
                     loss.backward()
             optim_G.step()
