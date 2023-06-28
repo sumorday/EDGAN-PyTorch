@@ -16,7 +16,7 @@ from tqdm import trange, tqdm
 from datasets import get_dataset
 from losses import HingeLoss
 from models import resnet
-from models.gradnorm import normalize_gradient
+from models.gradnorm import penalty_normalize_gradient
 from utils import ema, module_no_grad, set_seed
 from optim import Adam
 from pytorch_gan_metrics import (
