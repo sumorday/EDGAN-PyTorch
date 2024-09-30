@@ -1,4 +1,4 @@
-# Penalty Gradient Normalization for Generative Adversarial Networks
+# Penalty Gradient Normalization for Generative Adversarial Networks (IEEE International Conference on Systems, Man, And Cybernetics(IEEE SMC))
 
 
 
