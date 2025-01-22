@@ -146,5 +146,5 @@ loss.backward()                                 # backward propagation
 ## Citation
 If you find our work is relevant to your research, please cite:
 ```
-
+T. Xia and Q. Su, "Enhancing Training Stability in Generative Adversarial Networks via Penalty Gradient Normalization," 2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC), Kuching, Malaysia, 2024, pp. 3119-3124, doi: 10.1109/SMC54092.2024.10831253.
 ```
